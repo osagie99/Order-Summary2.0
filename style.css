@@ -127,6 +127,9 @@ body{
 .change a {
     color: var(--Bright-blue);
 }
+.change-icon {
+    display: none;
+}
 .change a:hover {
     color: #766CF1;
     text-decoration: none;
@@ -141,24 +144,67 @@ body{
     border-radius: 10px;
     padding-top: 15px;
     padding-bottom: 15px;
-    color: white;
     font-family: 'Red Hat Display', sans-serif;
     font-weight: 700;
     box-shadow: #DCD6F8 0px 19px 38px, #DCD6F8 0px 15px 12px;
+}
+.payment-proceed a {
+    text-decoration: none;
+    color: white;
 }
 .payment-proceed:hover {
     background-color: #766CF1;
 }
 .cancel{
-    color:grey;
     font-family: 'Red Hat Display', sans-serif;
     text-transform: capitalize;
     font-weight:900;
     cursor: pointer;
     margin-top: 30px;
 }
-.cancel:hover{
+.cancel a {
+    text-decoration: none;
+    color:grey;
+
+}
+.cancel a:hover{
     color:var(--Dark-blue);
 }
+
+
+@media only screen and (max-width:570px ) and (min-width: 200px) {
+    .container {
+        top: 4rem;
+        height: 650px;
+        width: 290px;
+    }
+    .content-header {
+        padding-top: 0.5em;
+    }
+    .father{
+        width: 70%;
+    }
+    .payment-proceed {
+        width: 70%;
+    }
+    .change a{
+        display: none;
+    }
+}
+
+@media only screen and (max-height:667px) {
+    .container {
+        top: 1rem;
+    }
+}
+@media only screen and (max-height:640px) {
+    .container {
+        top: 0;
+    }
+}
+/* @media only screen and (max-width: 200px) {
+    .header img {
+    }
+} */
 
 
